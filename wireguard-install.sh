@@ -105,7 +105,7 @@ new_client_dns () {
 	echo "   7) Nextdns"
 	echo "   8) AdGuard DNS"
 	read -p "DNS server [1]: " dns
-	until [[ -z "$dns" || "$dns" =~ ^[1-7]$ ]]; do
+	until [[ -z "$dns" || "$dns" =~ ^[1-8]$ ]]; do
 		echo "$dns: invalid selection."
 		read -p "DNS server [1]: " dns
 	done
